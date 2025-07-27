@@ -4,14 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catálogo E&C Luxscent</title>
+  <script>
+        if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+             window.location.href = 'catalogo.pdf';
+    }
+  </script>
   <style>
-    html, body, iframe { margin:0; padding:0; width:100%; height:100vh; border:none; }
+        html, body, iframe {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
   </style>
 </head>
 <body>
-  <iframe
-    src="https://docs.google.com/gview?url=https://eycluxscent.github.io/catalogo/catalogo.pdf&embedded=true"
-    allowfullscreen>
-  </iframe>
+    <iframe src="catalogo.pdf"></iframe>
 </body>
 </html>
